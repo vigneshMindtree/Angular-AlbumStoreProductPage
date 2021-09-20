@@ -9,7 +9,7 @@ export class ProductService {
   constructor(private _http: Http) { }
 private _albumUrl = '../assets/album.json';
 
-getAlbum(id:number ):Observable<number>{
+getAlbum(id:number):Observable<Number>{
   return this._http.get(this._albumUrl).map((Response) => Response.json());
 }
 }
